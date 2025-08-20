@@ -22,22 +22,22 @@ jobs:
       run: npm ci
     - name: build
       run: npm run build
-    - name: Create PR with dist
-      uses: googleapis/code-suggester@v4
-      with:
-        command: pr
-        upstream_repo: release-please-action
-        upstream_owner: othompson2
-        description: Build dist
-        title: "chore: build dist"
-        message: "chore: build dist"
-        labels: automated pr
-        branch: build-dist
-        force: true
-        git_dir: .
-        fork: true
-      env:
-        ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    # - name: Create PR with dist
+    #   uses: googleapis/code-suggester@v4
+    #   with:
+    #     command: pr
+    #     upstream_repo: release-please-action
+    #     upstream_owner: othompson2
+    #     description: Build dist
+    #     title: "chore: build dist"
+    #     message: "chore: build dist"
+    #     labels: automated pr
+    #     branch: build-dist
+    #     force: true
+    #     git_dir: .
+    #     fork: true
+    #   env:
+    #     ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   release-please-release:
     runs-on: ubuntu-latest
     needs: [build]
