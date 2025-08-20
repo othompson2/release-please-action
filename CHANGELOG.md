@@ -1,5 +1,18 @@
 # Changelog
 
+## [4.3.0](https://github.com/othompson2/release-please-action/compare/4.2.0...v4.3.0) (2025-08-20)
+
+
+### Features
+
+* fork and update ([aea1276](https://github.com/othompson2/release-please-action/commit/aea12763eb94278a56b8528fee491c0befec905b))
+
+
+### Bug Fixes
+
+* remove code suggester ([7a2a331](https://github.com/othompson2/release-please-action/commit/7a2a33130fad826b34983b25308481894d77f497))
+* run build locally ([b490e7a](https://github.com/othompson2/release-please-action/commit/b490e7ad644fa633343e6d5c944d0654edfb8088))
+
 ## [4.2.0](https://github.com/googleapis/release-please-action/compare/v4.1.5...v4.2.0) (2025-03-07)
 
 
